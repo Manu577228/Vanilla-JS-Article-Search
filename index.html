@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYT Article Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NYT Article Search</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter search query">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="resultsContainer" class="results-container"></div>
+    </div>
+
+    <div id="modalContainer" class="modal-container">
+        <div class="modal-content" id="modalContent">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <div id="modalArticle"></div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        New York Times Article Search by Bharadwaj
+    </footer>
+
+    <script src="index.js"></script>
+    <script>
+        // Navigate to YouTube URL when footer is clicked
+        document.getElementById('footer').addEventListener('click', function() {
+            window.location.href = 'https://youtube.com/@code-with-Bharadwaj';
+        });
+    </script>
+</body>
+</html>

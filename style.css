@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  background-color: #333; /* Dark background color */
+  font-family: "Noticia Text", serif;
+  margin: 0;
+  padding: 0;
+  color: white; /* White text color */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: white; /* White text color */
+}
+
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #7d3eb3; /* Darker purple */
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #9c5fc0; /* Lighter purple */
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.result {
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff; /* White background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  width: calc(33.33% - 20px);
+}
+
+.result:hover {
+  transform: translateY(-5px);
+}
+
+.result h2 {
+  margin-top: 0;
+  color: #000; /* Black text color */
+  font-size: 20px;
+}
+
+.result p {
+  color: #000; /* Black text color */
+  font-size: 16px;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 25%;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: lightcoral; /* Light coral color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.close-btn {
+  color: white; /* White text color */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: white; /* White text color */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Dark background color */
+  color: white; /* White text color */
+  text-align: center; /* Center align text */
+  padding: 10px 0; /* Add padding */
+  cursor: pointer;
+}
