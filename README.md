@@ -1,4 +1,4 @@
-# Welcome to Article-Search App!
+# Welcome to Article-Search App
 
 Hey there! 👋 I'm Manu Bharadwaj. If you find this project useful or interesting, don't forget to give it a ⭐️!
 
